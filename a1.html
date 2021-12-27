@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Danya Pidor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div id="app">
+       <div v-bind:title="Pidor_Danya">
+        Pidor_Danya
+       </div>
+      </div>
+
+      <div id="event-handling">
+        <p>{{ Pidor_Danya }}</p>
+        <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+      </div>
+
+      <!-- <div id="list-rendering">
+        <ol>
+          <li v-for="todo in todos">
+            {{ todo.text,}}
+          </li>
+        </ol>
+      </div> -->
+
+      <div id="todo-list-app">
+        <ol>
+          <!--
+            Теперь можно передавать каждому компоненту todo-item объект с информацией
+            о задаче, который может динамически изменяться. Также каждому компоненту
+            определяем "key", назначение которого разберём далее в руководстве.
+          -->
+          <todo-item
+            v-for="item in groceryList"
+            v-bind:todo="item"
+            v-bind:key="item.id"
+          ></todo-item>
+        </ol>
+      </div>
+<!--       
+      <div id="counter">
+        Счётчик: {{ counter }}
+      </div> -->
+
+      <div id="bind-attribute">
+        <span v-bind:title="message">
+          Задержи курсор на надписи и узнаешь секрет!
+        </span>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

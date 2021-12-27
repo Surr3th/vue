@@ -1,0 +1,184 @@
+html{
+    background-color:salmon;
+	background-image:url(fon.jpg);
+	font-family:sans-serif;
+	font-style: italic;
+}
+body{
+    margin: 0px;
+
+    height: 100vw;
+}
+.Enter_Text{
+	position:absolute;
+	left:0vw;
+}
+.Title{
+	position:absolute;
+	left:15vw;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#counter1{
+    position: absolute;
+    left:80vw;
+	bottom: 0px;
+	height: 100px; 
+}
+#footer{
+    position: absolute;
+	left: 900px;
+	bottom: 0px;
+	height: 50px;
+	font-style:normal;
+}
+#Italy{
+    position:absolute;
+	left: 500px;
+	height: 50;
+	font-style:normal;
+}
+.Swiss{
+    position: absolute;
+	left: 580px;
+	font-style:normal;
+}
+.Netherlands{
+    position: absolute;
+	left: 690px;
+	font-style:normal;
+}
+.Polsha{
+    position: absolute;
+	left: 810px;
+	font-style:normal;
+}
+.Belgy{
+    position: absolute;
+	left: 895px; 
+	font-style:normal;
+}
+.Germany{
+    position: absolute;
+	left: 980px;
+	font-style:normal;
+}
+.Daniya{
+    position: absolute;
+	left: 1080px;
+	font-style:normal;
+}
+.Eng{
+    position:absolute;
+	left:60vw;
+	font-style:normal;
+}
+.table{
+	position:absolute;
+	left:950px;
+	bottom:300px;
+}
+table{
+	border: 1px solid black;
+}
+th{
+	border: 1px solid black;
+}
+tr{
+	border: 1px solid black;
+}
+td{
+	border: 1px solid black;
+}
+#bind-attribute{
+	position: absolute;
+	bottom: 41vw;
+	left:35vw;
+}
+#flights{ 
+	position: absolute;
+	bottom: 35vw;
+	left:3vw;	
+	
+}
+.adaptivny-slayder {
+	position: absolute;
+	max-width: 680px;
+	right: 1100px;
+	bottom:100px;
+	margin: 50px auto;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+  }
+  
+  .adaptivny-slayder input[name="kadoves"] {
+	display: none;
+  }
+  
+  .kadoves {
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+	text-align: center;
+	width: 100%;
+  }
+  
+  .kadoves label {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+	margin: 0 3px;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+	border-radius: 50%;
+	border: 5px solid #2f363c;
+	background-color: #738290;
+  }
+  
+  #slaid1:checked~.kadoves label[for="slaid1"] {
+	background-color: white;
+  }
+  
+  #slaid2:checked~.kadoves label[for="slaid2"] {
+	background-color: white;
+  }
+  
+  #slaid3:checked~.kadoves label[for="slaid3"] {
+	background-color: white;
+  }
+  #slaid4:checked~.kadoves label[for="slaid4"] {
+	background-color: white;
+  }
+  
+  .adaptivny-slayder-lasekun {
+	overflow: hidden;
+	 
+  }
+  
+  .abusteku-deagulus {
+	display: flex;
+	width: 100%;
+	transition: all 0.5s;
+  }
+  
+  .abusteku-deagulus img {
+	width: 100%;
+	flex-shrink:0;
+  }
+  
+  #slaid1:checked~adaptivny-slayder-lasekun abusteku-deagulus {
+	transform: translate(0);
+  }
+  
+  #slaid2:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+	transform: translateX(-100%);
+  }
+  
+  #slaid3:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+	transform: translateX(-200%);
+  }
+  #slaid4:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+	transform: translateX(-300%);
+  }

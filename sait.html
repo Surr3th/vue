@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>air travel companion</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <div class="Con_Enter">
+        <div class="Enter_Text">Войти:</div>
+    </div>
+    <div class="Title">
+        <img src="ATC.png" width="50" height="50">
+    </div> 
+    <div id="Italy"><span v-bind:title="message">Италия </span>       
+        <img src="italy.gif" width="15" height="15">   
+    </div>
+    <div class="Swiss">Швейцария
+        <img src="swiss.gif" width="15" height="15"> 
+    </div>
+    <div class="Netherlands">Нидерланды
+        <img src="niderlandy.gif" width="15" height="15">
+    </div>
+    <div class="Polsha">Польша
+    <img src="polsha.gif" width="15" height="15">
+    </div>
+    <div class="Belgy">Бельгия
+    <img src="Belgy.gif" width="15" height="15">
+    </div>
+    <div class="Germany">Германия
+    <img src="germany.gif" width="15" height="15">
+    </div>
+    <div class="Daniya">Дания
+    <img src="Daniya.gif" width="15" height="15">
+    </div>
+    <div class="Eng">Великобритания
+    <img src="eng.gif" width="15" height="15"> 
+    </div>     
+</header>
+<div id="bind-attribute">
+    <span v-bind:title="message">
+        <center>Вас приветствует компания Air Travel Companion. 
+        <br>Мы будем вашим надёжным другом в воздушных перелётах по Европе.</br> 
+        Наши авиарейсы являются быстрым способом вашего путешествия по небу....
+        </center>
+    </span>
+</div>
+<div id="flights">
+    <span v-bind:title="message">
+    <ul class="dropdown">
+        Возможные рейсы в такие страны как:
+        <li name="2" class="cat"> Италия</li>
+        <li name="3" class="cat"> Швейцария</li>
+        <li name="4" class="cat"> Нидерланды</li>
+        <li name="5" class="cat"> Польша</li>
+        <li name="6" class="cat"> Бельгия</li>
+        <li name="7" class="cat"> Германия</li>
+        <li name="8" class="cat"> Дания</li>
+        <li name="9" class="cat"> Великобритания</li>
+    </ul>
+</span>
+</div>
+
+<div id="#table">
+    <table class="table" cellspacing="0">
+          <tr><th>пункт назначения</th><th>передние ряды</th><th>места по середине</th><th>месте у выходов</th><th>в хвосте самолёта</th><th>валюта</th></tr>
+          <tr><td>Рим</td><td>120/110/8900</td><td>105/95/7800</td><td>100/90/7400</td><td>100/90/7400</td><td>USD/EUR/RUB</td></tr>
+          <tr><td>Берн</td><td>120/110/8900</td><td>105/95/7800</td><td>100/90/7400</td><td>100/90/7400</td><td>USD/EUR/RUB</td></tr>
+          <tr><td>Амстердам</td><td>120/110/8900</td><td>105/95/7800</td><td>100/90/7400</td><td>100/90/7400</td><td>USD/EUR/RUB</td></tr>
+          <tr><td>Варшава</td><td>120/110/8900</td><td>105/95/7800</td><td>100/90/7400</td><td>100/90/7400</td><td>USD/EUR/RUB</td></tr>
+          <tr><td>Брюссель</td><td>120/110/8900</td><td>105/95/7800</td><td>100/90/7400</td><td>100/90/7400</td><td>USD/EUR/RUB</td></tr>
+          <tr><td>Берлин</td><td>120/110/8900</td><td>105/95/7800</td><td>100/90/7400</td><td>100/90/7400</td><td>USD/EUR/RUB</td></tr>
+          <tr><td>Копенгаген</td><td>120/110/8900</td><td>105/95/7800</td><td>100/90/7400</td><td>100/90/7400</td><td>USD/EUR/RUB</td></tr>
+          <tr><td>Лондон</td><td>120/110/8900</td><td>105/95/7800</td><td>100/90/7400</td><td>100/90/7400</td><td>USD/EUR/RUB</td></tr>
+    </table>
+</div>
+<div id="counter1">
+    Время проведенное на сайте: {{ counter }}
+</div>
+<div class="adaptivny-slayder">
+    <input type="radio" name="kadoves" id="slaid1" checked>
+    <input type="radio" name="kadoves" id="slaid2">
+    <input type="radio" name="kadoves" id="slaid3">
+    <input type="radio" name="kadoves" id="slaid4">
+     
+    <div class="kadoves">
+    <label for="slaid1"></label>
+    <label for="slaid2"></label>
+    <label for="slaid3"></label>
+    <label for="slaid4"></label>
+    </div>
+     
+    <div class="adaptivny-slayder-lasekun">
+    <div class="abusteku-deagulus">
+    <img src="plane3.jpg"/>
+    <img src="plane1.jpg"/>
+    <img src="plane2.jpg"/>
+    <img src="plane.jpg"/>
+    </div>
+    </div>
+  </div>
+<div id="footer">
+    @Air Travel Companion
+    <br>+7(958)624-34-54</br>
+</div>
+    <script src="script1.js"></script>
+</body>
+
+</html>
